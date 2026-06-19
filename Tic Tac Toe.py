@@ -1,5 +1,3 @@
-# ======================= OBAI =======================
-
 import tkinter as tk
 from tkinter import messagebox
 import random
@@ -55,9 +53,6 @@ def updateStatus(text):
 def updateScore():
     scoreLabel.config(text=f"Player ({player}): {playerScore}   |   Bot ({computer}): {botScore}")
 
-
-
-# ======================= SHERIF =======================
 
 def minimax(isMax):
     if checkWhichMarkWon(computer):
@@ -158,10 +153,6 @@ def compMove():
     
     moveInProgress = False
 
-
-
-# ======================= YOUSSEF 1 =======================
-
 def playerMove(pos):
     global aiMoveID, gameOver, playerScore, playerTurn, moveInProgress
 
@@ -232,10 +223,6 @@ def startNewGame():
 
 def restartGame():
     startNewGame()
-
-
-
-# ======================= YOUSSEF 2 =======================
 
 root = tk.Tk()
 root.title("Tic Tac Toe AI")
